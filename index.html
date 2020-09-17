@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+              #clear{
+                  width: 125px;
+              }
+            
+              .formstyle{
+                  margin: auto;
+                  width: 125px;
+                  height: 175px;
+                  border: 2px solid black;
+              }
+              #awm{
+                  width: 120px;
+                  background-color: gray;
+                  
+              }
+              .mk{
+                  background-color: lightblue;
+                  width: 38px;
+              }
+              .ck{
+                  background-color: lightgoldenrodyellow;
+                  width: 38px;
+              }
+              .kk{
+                  background-color: lightseagreen;
+              }
+              
+        </style>
+    </head>
+    <body>
+        <div class="formstyle">
+            <form name="nk">
+                <input type="text" name="sk"  id="awm">
+                <br><br>
+                <input type="button" value="1" onclick="nk.sk.value += '1'" class="mk">
+                <input type="button" value="2" onclick="nk.sk.value += '2'" class="mk">
+                <input type="button" value="3" onclick="nk.sk.value += '3'" class="mk">
+                <br>
+                <input type="button" value="4" onclick="nk.sk.value += '4'" class="mk">
+                <input type="button" value="5" onclick="nk.sk.value += '5'" class="mk">
+                <input type="button" value="6" onclick="nk.sk.value += '6'" class="mk">
+                <br>
+                <input type="button" value="7" onclick="nk.sk.value += '7'" class="mk">
+                <input type="button" value="8" onclick="nk.sk.value += '8'" class="mk">
+                <input type="button" value="9" onclick="nk.sk.value += '9'" class="mk">
+                <br>
+                <input type="button" value="+" onclick="nk.sk.value += '+'" class="ck">
+                <input type="button" value="-" onclick="nk.sk.value += '-'" class="ck">
+                <input type="button" value="*" onclick="nk.sk.value += '*'" class="ck">
+                <br>
+                
+                <input type="button" value="/" onclick="nk.sk.value += '/'" class="ck">
+                <input type="button" value="0" onclick="nk.sk.value += '0'" class="mk">
+                <input type="button" value="=" onclick="nk.sk.value = eval(nk.sk.value)" class="ck">
+                <br>
+                <input type="button" value="clear" onclick="nk.sk.value = ''" id="clear" class="kk">
+ 
+
+            </form>
+        </div>
+    </bod>
+</html>
